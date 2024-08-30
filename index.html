@@ -32,15 +32,111 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .garamond {
+        .font-garamond {
             font-family: "EB Garamond", serif;
         }
     </style>
 </head>
 
-<body>
+<body class="font-poppins">
     <!-- header container starts here -->
-    <header></header>
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 text-[#707070] md:pt-4">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img class="w-11/12 md:w-full" src="images/logo2.png" alt="Brand Logo">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 items-center">
+                    <li><a>Home</a></li>
+                    <li>
+                        <a>
+                            Services
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                                stroke="currentColor" class="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Cases
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                                stroke="currentColor" class="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Blog
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                                stroke="currentColor" class="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Contact Us
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                                stroke="currentColor" class="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#B68C5A] text-white font-semibold">Free Consultation</a>
+            </div>
+        </div>
+
+        <!-- hero -->
+        <div class="bg-cover bg-center h-auto mt-6 md:mt-12 bg-opacity-75"
+            style="background-image: url('images/banner.png');">
+            <!-- hero content -->
+            <div class="w-11/12 md:w-[70%] mx-auto text-center space-y-6 py-24">
+                <h1 class="font-garamond text-5xl md:text-7xl font-extrabold text-white">
+                    We Provide Effective Legal Solutions
+                </h1>
+                <p class="text-[#E7E7E7] text-sm md:text-base">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour.
+                </p>
+
+                <!-- hero form -->
+                <form class="flex justify-center items-center gap-6 mt-8" action="">
+                    <input type="search" placeholder="Search your services"
+                        class="w-[80%] h-12 rounded-lg placeholder:pl-4 text-[#A0A0A0] text-sm md:text-base">
+                    <button class="btn bg-[#B68C5A] text-white border border-none">Search Here</button>
+                </form>
+            </div>
+        </div>
+    </header>
     <!-- header container ends here -->
 
     <!-- main container starts here -->
